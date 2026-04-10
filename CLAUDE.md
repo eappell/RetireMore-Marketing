@@ -20,7 +20,8 @@ The product itself lives in [`../Retire-Portal`](../Retire-Portal). Strategy doc
 **Trust pillars** (use these in copy):
 1. No financial products sold
 2. No advisor required
-3. Free to start
+3. We never take referral fees from advisors
+4. Free to start
 
 ## Audience
 
@@ -124,6 +125,7 @@ Where things live:
 6. **Don't push to remote.** Scripts that touch Retire-Portal (`publish-blog.ts`) write files locally and *print* the `gh pr create` command — they never push. Same for any future scripts that touch Loops campaigns: draft mode by default, send only on explicit user confirmation.
 7. **Secrets stay in `.env`.** Never commit `.env`. Never write API keys into any file in this repo. `.env.example` documents what keys are needed.
 8. **One slash command per natural unit of work.** Don't run `/new-blog-post` and `/social-week` and `/ad-campaign` from a single prompt. The user invokes them one at a time so they can review.
+9. **Never propose paid advisor matching, lead-gen marketplaces, or per-lead fees from RIAs.** Trust pillar #3 ("We never take referral fees from advisors") is permanent. When users need a fiduciary, point them to the free directory at [content/landing-pages/fiduciary-directory.md](content/landing-pages/fiduciary-directory.md) — never to SmartAsset, NerdWallet Advisor Matcher, Zoe, Wealthramp, Indyfin, or any similar service. The full policy lives in the appendix of [affiliate/AFFILIATE_PROGRAM.md](affiliate/AFFILIATE_PROGRAM.md).
 
 ## Source-of-truth references (always read these before changing claims)
 

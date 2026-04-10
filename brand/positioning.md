@@ -23,7 +23,8 @@ Every other retirement tool treats retirement as a math problem. RetireMore trea
 
 1. **No financial products sold.** No insurance, no annuities, no managed accounts. Ever.
 2. **No advisor required.** You can do the whole plan yourself. Our outputs work great in advisor meetings if you have one.
-3. **Free to start.** All 12 tools on the free tier. The free tier is permanent, not a trial.
+3. **We never take referral fees from advisors.** Unlike SmartAsset, NerdWallet's advisor matcher, Zoe Financial, or Wealthramp, RetireMore does not sell user leads to RIAs. When we point you to a fiduciary, we point you to a free directory (NAPFA, XY Planning Network, Garrett) — no money changes hands. You are not the lead.
+4. **Free to start.** All 12 tools on the free tier. The free tier is permanent, not a trial.
 
 ## Why now
 
@@ -40,6 +41,7 @@ Every other retirement tool treats retirement as a math problem. RetireMore trea
 | **ProjectionLab** | Powerful, flexible math | Built for normal humans, not power users. Plus the lifestyle tools they don't have. |
 | **Pralana** | Best-in-class drawdown modeling | All the things outside the spreadsheet. Web-native. AI Coach. |
 | **Empower / Personal Capital** | Free portfolio dashboard | We don't try to sell you wealth management. Your data isn't a lead. |
+| **SmartAsset / NerdWallet Advisor Matcher / Zoe / Wealthramp** | "Find an advisor" matching | Those services monetize by selling user leads to RIAs at $50–$150/lead. We don't. When we point you to a fiduciary, it's a free directory — no money changes hands. |
 | **Fee-only RIA** | Personalized human advice | $0 instead of $3K–$10K/year. Bring our outputs to them. |
 | **AARP / NerdWallet content** | Massive reach, trusted brand | Articles + actual tools to run your numbers. |
 | **A robo-advisor** | Automated portfolio management | We're a *planner*, not a *manager*. Different problem. |

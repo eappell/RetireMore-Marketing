@@ -2,7 +2,7 @@
 
 ## Master positioning
 
-> The only retirement platform that plans your **whole** retirement — finances, location, healthcare, purpose, and legacy — in one place. Free to start. No advisor required. No financial products sold.
+> The only retirement platform that plans your **whole** retirement — finances, location, healthcare, purpose, and legacy — in one place. Free to start. No advisor required. No financial products sold. We never take referral fees from advisors.
 
 ## Three pillars (use as headlines, ad sets, content categories)
 
@@ -86,4 +86,5 @@
 - Free tier covers all 12 tools
 - AI Coach is grounded in your actual scenarios (not a generic chatbot)
 - No financial product sales — ever
+- No referral fees from advisors — ever (you are not the lead, unlike SmartAsset / NerdWallet Advisor Matcher / Zoe / Wealthramp)
 - Built by people who got tired of retirement tools that only know about money

@@ -305,3 +305,25 @@ All affiliates receive a unique referral link, a real-time dashboard showing cli
 ---
 
 *This document should be reviewed quarterly and updated based on affiliate performance data, competitive commission rates, and program ROI.*
+
+---
+
+## Appendix — What this program will NEVER do (brand policy, 2026-04-10)
+
+This appendix codifies a brand policy that supersedes anything elsewhere in this document if the two conflict.
+
+**1. We will never run a paid advisor-matching service.**
+RetireMore will not operate a SmartAsset / NerdWallet Advisor Matcher / Zoe Financial / Wealthramp / Indyfin-style lead-gen marketplace where users are matched with RIAs in exchange for per-lead fees paid to RetireMore. This is a permanent policy, not a v1 deferral. It is part of trust pillar #3 in [`../CLAUDE.md`](../CLAUDE.md): *"We never take referral fees from advisors."*
+
+**2. We will never accept per-signup commissions from CFPs or RIAs.**
+Existing affiliate segment #4 (Fee-only CFPs / RIAs) is **inbound only** — CFPs promote RetireMore to *their* clients, not the other way around. The relationship is structured as a referral or educational license that does not compromise the advisor's fiduciary duty (per the affiliate-recruiter agent's compliance rail). RetireMore does not pay CFPs to send users in our direction in any structure that resembles a kickback for referring fiduciary clients.
+
+**3. We will never sell, share, or rent user contact info to financial services firms.**
+No exceptions. This applies to advisors, insurance brokers, annuity issuers, brokerages, robo-advisors, lenders, and credit card companies.
+
+**4. When users need a fiduciary, we point them to free directories.**
+See the spec at [`../content/landing-pages/fiduciary-directory.md`](../content/landing-pages/fiduciary-directory.md) — a free, no-money-changes-hands page that links to NAPFA, XY Planning Network, Garrett Planning Network, Fee-Only Network, and the CFP Board verifier. No revenue, no tracking of individual user-to-directory clicks beyond aggregate PostHog events.
+
+**Why this is permanent.** Every other "find an advisor" service monetizes by selling users as leads. Refusing to do that is a competitive wedge, not a sacrifice — and it's the one promise that, if broken, would unravel the entire brand position.
+
+**SEC note.** Patterns prohibited above (per-lead fees, paid matching) would trigger SEC Rule 206(4)-3 (the solicitor rule) and require written disclosure to clients. The simpler answer is to not do them at all.

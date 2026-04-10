@@ -54,6 +54,16 @@ Monthly affiliate scorecard pulls:
 
 Run: `npm run loops:list-contacts` (TODO — not yet built) + Rewardful API export → analytics-reporter agent → `analytics/reports/<date>-affiliates.md`.
 
+## Out of scope — permanent brand policy
+
+This program will **never** include:
+
+- A paid advisor-matching service (the SmartAsset / NerdWallet Advisor Matcher / Zoe / Wealthramp model) — RetireMore does not sell user leads to RIAs at any price.
+- Per-signup commissions paid *to* CFPs or RIAs for referring users to RetireMore in a way that would compromise the advisor's fiduciary duty. Segment #4 (CFPs/RIAs) in the affiliate program operates as a referral relationship or educational license — not a per-signup kickback.
+- Sharing or selling user contact info to any financial services firm.
+
+See the full policy in the appendix of [`AFFILIATE_PROGRAM.md`](AFFILIATE_PROGRAM.md) and trust pillar #3 in [`../CLAUDE.md`](../CLAUDE.md).
+
 ## Open questions
 
 - Should we offer an *exclusive content kit* for top affiliates (e.g., a custom video script we license for them)?
