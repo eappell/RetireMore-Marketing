@@ -1,0 +1,18 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "RetireMore",
+  "url": "https://retiremore.com",
+  "logo": "https://retiremore.com/logo.png",
+  "description": "The only retirement platform that plans your whole retirement — finances, location, healthcare, purpose, and legacy — in one place.",
+  "sameAs": [
+    "https://x.com/retiremore",
+    "https://www.linkedin.com/company/retiremore",
+    "https://www.youtube.com/@retiremore"
+  ],
+  "contactPoint": {
+    "@type": "ContactPoint",
+    "contactType": "customer support",
+    "email": "support@retiremore.app"
+  }
+}

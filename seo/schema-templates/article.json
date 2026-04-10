@@ -1,0 +1,26 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "<TITLE>",
+  "description": "<META_DESCRIPTION>",
+  "image": "<HERO_IMAGE_URL>",
+  "datePublished": "<YYYY-MM-DD>",
+  "dateModified": "<YYYY-MM-DD>",
+  "author": {
+    "@type": "Organization",
+    "name": "RetireMore",
+    "url": "https://retiremore.com"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "RetireMore",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://retiremore.com/logo.png"
+    }
+  },
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "<CANONICAL_URL>"
+  }
+}

@@ -1,0 +1,34 @@
+# Dependencies
+node_modules/
+
+# Env
+.env
+.env.local
+.env.*.local
+
+# Build artifacts
+dist/
+build/
+*.tsbuildinfo
+
+# Reports & raw data pulls (commit narrative reports in analytics/reports/, not raw JSON)
+data/reports/*.json
+data/reports/*.csv
+
+# Contact lists — never commit personal data
+data/contacts/
+outreach/contact-lists/*.csv
+outreach/contact-lists/*.tsv
+outreach/contact-lists/*.xlsx
+affiliate/channels/*-private.md
+
+# OS / editor
+.DS_Store
+.vscode/
+.idea/
+*.swp
+*~
+
+# Logs
+*.log
+npm-debug.log*

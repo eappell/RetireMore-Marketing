@@ -1,0 +1,30 @@
+{
+  "name": "retiremore-marketing",
+  "version": "0.1.0",
+  "private": true,
+  "description": "All-in-one marketing workspace for RetireMore — SEO, email, paid, outreach, social, affiliate, analytics. Claude Code-first with lightweight API integrations.",
+  "type": "module",
+  "scripts": {
+    "loops:upsert-contact": "tsx scripts/loops/upsert-contact.ts",
+    "loops:send-campaign": "tsx scripts/loops/send-campaign.ts",
+    "loops:sync-properties": "tsx scripts/loops/sync-properties.ts",
+    "posthog:weekly": "tsx scripts/posthog/weekly-report.ts",
+    "posthog:funnel": "tsx scripts/posthog/funnel-pull.ts",
+    "resend:send-test": "tsx scripts/resend/send-test.ts",
+    "stripe:revenue": "tsx scripts/stripe/revenue-report.ts",
+    "seo:sitemap": "tsx scripts/seo/generate-sitemap.ts",
+    "publish-blog": "tsx scripts/seo/publish-blog.ts",
+    "weekly-report": "npm-run-all --parallel posthog:weekly posthog:funnel stripe:revenue"
+  },
+  "dependencies": {
+    "dotenv": "^16.4.5",
+    "zod": "^3.23.8",
+    "gray-matter": "^4.0.3"
+  },
+  "devDependencies": {
+    "@types/node": "^22.5.0",
+    "npm-run-all": "^4.1.5",
+    "tsx": "^4.19.0",
+    "typescript": "^5.6.0"
+  }
+}
