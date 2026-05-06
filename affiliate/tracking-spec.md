@@ -1,32 +1,34 @@
 # Affiliate Tracking Spec
 
-How affiliate attribution will work. **Not yet implemented** — this is the spec the dev team will build against once we cross the first 100 paying users (per the deferred-scope decision in the project plan).
+How affiliate attribution works. Authoritative pricing and commission structure live in [AFFILIATE_PROGRAM.md](AFFILIATE_PROGRAM.md). Detailed platform comparison and implementation steps in [platform-eval.md](platform-eval.md).
 
-## Recommended platform: Rewardful
+## Platform: Rewardful
 
-- Stripe-native (zero custom integration on the payment side)
-- Tracks first-click and last-click attribution
+- Stripe-native (two-way sync, zero custom integration on the payment side)
+- Tracks last-paid-touch attribution
 - Handles partial commissions for refunds
 - Provides affiliate dashboard out of the box
 
-Pricing: starts at $49/mo. Worth it once we have ≥10 active affiliates.
+Pricing: $49/mo Starter (up to $7.5k tracked rev) → $99/mo Pro → $149/mo Scale.
 
-## How it will work
+## How it works
 
-1. Affiliate signs up at `retiremore.com/affiliates` (a Rewardful-hosted page).
-2. Affiliate gets a unique tracking link: `retiremore.com/?via=<affiliate-id>`
-3. Rewardful drops a 60-day attribution cookie.
-4. When the user converts (Stripe `customer.subscription.created` webhook), Rewardful matches `customer.email` → cookie → affiliate.
-5. Commission is recorded against the affiliate at the configured rate.
-6. Payout monthly (PayPal, Wise, or ACH), 30-day clawback period for refunds.
+1. Affiliate signs up at `retiremore.com/affiliates` (Rewardful-hosted form embedded on our page).
+2. Affiliate gets a unique tracking link: `retiremore.com/?via=<affiliate-id>`.
+3. Rewardful drops a **90-day attribution cookie**.
+4. When the user converts (Stripe `customer.subscription.created` webhook), Rewardful matches Stripe customer ID → cookie → affiliate.
+5. Commission is recorded against the affiliate at the configured rate (30% recurring, with tier escalators).
+6. Payout monthly (Wise primary, PayPal/ACH fallback), 30-day clawback period for refunds.
 
-## Commission structure
+## Commission structure (summary)
 
-(See [AFFILIATE_PROGRAM.md](AFFILIATE_PROGRAM.md) for the full structure migrated from Retire-Portal docs. Summary:)
+Full detail in [AFFILIATE_PROGRAM.md](AFFILIATE_PROGRAM.md):
 
-- **Standard tier:** $20 per Premium signup, $40 per Planner signup
-- **Recurring:** 10% of monthly subscription for 12 months (lifetime cap)
-- **Custom tier (high-value channels):** negotiated, up to $350 one-time per Planner annual
+- **Consumer track (default):** 30% recurring for the lifetime of the subscription.
+- **Tier escalators:** 30% (0 to 24 active subs) → 35% (25 to 99) → 40% (100+).
+- **First-conversion bonus:** $20 one-time per affiliate, paid the first time their first ever referral converts.
+- **Advisor track (separate):** $200 to $350 one-time bounty + 10% recurring lifetime, advisor-to-advisor only.
+- **Custom B2B (HR/community):** Negotiated CPA; not run through Rewardful.
 
 ## Compliance
 
@@ -36,13 +38,13 @@ Pricing: starts at $49/mo. Worth it once we have ≥10 active affiliates.
 
 ## UTM mapping
 
-Rewardful sets `?via=<id>` for tracking. We *also* want UTMs for our own analytics:
+Rewardful sets `?via=<id>` for affiliate attribution. We *also* want UTMs for our own analytics:
 
 ```
-?via=<affiliate-id>&utm_source=affiliate&utm_medium=affiliate&utm_campaign=<channel-slug>
+?via=<affiliate-id>&utm_source=affiliate&utm_medium=<channel-slug>&utm_campaign=<creator-handle>
 ```
 
-When generating creative kit links, populate both Rewardful's `via` and our UTMs.
+When generating creative kit links, populate both Rewardful's `via` and our UTMs. Rewardful is the source of truth for commissions; PostHog UTMs are for content attribution and creator-level performance reporting.
 
 ## Reporting
 
