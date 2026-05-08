@@ -321,7 +321,7 @@ function slide3_Gap() {
   const pillarW = 5.5;
   const pillarH = 1.18;
   pillars.forEach((p, i) => {
-    const py = 2.95 + i * 1.32;
+    const py = 2.85 + i * 1.25;
     s.addShape(pres.shapes.RECTANGLE, {
       x: pillarX, y: py, w: pillarW, h: pillarH,
       fill: { color: C.navyDeep }, line: { color: C.borderDark, width: 0.75 }
@@ -349,7 +349,7 @@ function slide3_Gap() {
   });
 
   s.addText("Sources: Edward Jones / Age Wave, “Four Pillars of the New Retirement”; Fidelity Retiree Health Care Cost Estimate (2024); Hill & Turiano, Psychological Science (2014); Caring.com Wills & Estate Planning Study (2024).", {
-    x: 0.7, y: 6.65, w: 12, h: 0.3,
+    x: 0.7, y: 6.78, w: 12, h: 0.25,
     fontSize: 9, fontFace: FONT_BODY, color: C.textMutedOnDark, italic: true, margin: 0
   });
 
