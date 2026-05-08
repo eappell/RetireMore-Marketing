@@ -7,7 +7,7 @@ const pptxgen = require("pptxgenjs");
 const pres = new pptxgen();
 pres.layout = "LAYOUT_WIDE"; // 13.333" x 7.5"
 pres.author = "Eddie Appell, RetireMore";
-pres.title = "RetireMore — The Retirement Platform Your Clients Are Missing";
+pres.title = "RetireMore — The Retirement Platform Your Clients Are Asking For";
 pres.subject = "CFP Partnership Pitch";
 
 // ============================================================
@@ -154,7 +154,7 @@ function slide1_Title() {
   });
   s.addText([
     { text: "your clients are ", options: { color: C.white } },
-    { text: "missing", options: { color: C.gold, italic: true } },
+    { text: "asking for", options: { color: C.gold, italic: true } },
     { text: ".", options: { color: C.white } }
   ], {
     x: 1.2, y: 3.85, w: 11.5, h: 0.95,
@@ -284,48 +284,71 @@ function slide3_Gap() {
   });
 
   // Big stat — left
-  s.addText("73%", {
+  s.addText("92%", {
     x: 0.7, y: 3.0, w: 5.5, h: 2.5,
     fontSize: 150, fontFace: FONT_HEAD, color: C.gold, bold: true, margin: 0, valign: "top"
   });
-  s.addText("of pre-retirees say their biggest fears\nabout retirement are NOT financial.", {
+  s.addText("of retirees say having a sense of purpose\nis essential to a successful retirement.", {
     x: 0.7, y: 5.85, w: 5.7, h: 0.85,
     fontSize: 15, fontFace: FONT_BODY, color: C.white, italic: true, margin: 0
   });
 
-  // Right column — three pillars
+  // Right column — three pillars (with real-source stats)
   const pillars = [
-    { num: "1/3", lbl: "Financial Security", desc: "What planning software solves." },
-    { num: "1/3", lbl: "Lifestyle & Purpose", desc: "Where will I live, who will I be, how will I spend my time?" },
-    { num: "1/3", lbl: "Legacy & Impact", desc: "How will I be remembered, what will I leave behind?" },
+    {
+      num: "1/3",
+      lbl: "Financial Security",
+      desc: "Income, taxes, withdrawals — what your software solves.",
+      stat: "≈ $315K projected lifetime healthcare bill — Fidelity, 2024.",
+      col: C.blueLight,
+    },
+    {
+      num: "1/3",
+      lbl: "Lifestyle & Purpose",
+      desc: "Where, who, and how clients spend their time.",
+      stat: "Strong purpose → 15% lower mortality — Psychological Science, 2014.",
+      col: C.goldLight,
+    },
+    {
+      num: "1/3",
+      lbl: "Legacy & Impact",
+      desc: "What clients leave behind — financial and personal.",
+      stat: "Only 46% of Americans 55+ have a will — Caring.com, 2024.",
+      col: C.green,
+    },
   ];
   const pillarX = 7.0;
   const pillarW = 5.5;
+  const pillarH = 1.18;
   pillars.forEach((p, i) => {
-    const py = 3.0 + i * 1.25;
+    const py = 2.95 + i * 1.32;
     s.addShape(pres.shapes.RECTANGLE, {
-      x: pillarX, y: py, w: pillarW, h: 1.05,
+      x: pillarX, y: py, w: pillarW, h: pillarH,
       fill: { color: C.navyDeep }, line: { color: C.borderDark, width: 0.75 }
     });
     s.addShape(pres.shapes.RECTANGLE, {
-      x: pillarX, y: py, w: 0.08, h: 1.05,
-      fill: { color: i === 0 ? C.blueLight : i === 1 ? C.goldLight : C.green }, line: { type: "none" }
+      x: pillarX, y: py, w: 0.08, h: pillarH,
+      fill: { color: p.col }, line: { type: "none" }
     });
     s.addText(p.num, {
       x: pillarX + 0.25, y: py + 0.12, w: 1.0, h: 0.85,
-      fontSize: 36, fontFace: FONT_HEAD, color: C.white, bold: true, margin: 0
+      fontSize: 32, fontFace: FONT_HEAD, color: C.white, bold: true, margin: 0
     });
     s.addText(p.lbl, {
-      x: pillarX + 1.4, y: py + 0.12, w: pillarW - 1.5, h: 0.4,
-      fontSize: 16, fontFace: FONT_HEAD, color: C.white, bold: true, margin: 0
+      x: pillarX + 1.4, y: py + 0.1, w: pillarW - 1.5, h: 0.35,
+      fontSize: 15, fontFace: FONT_HEAD, color: C.white, bold: true, margin: 0
     });
     s.addText(p.desc, {
-      x: pillarX + 1.4, y: py + 0.52, w: pillarW - 1.5, h: 0.5,
-      fontSize: 11, fontFace: FONT_BODY, color: C.textMutedOnDark, italic: true, margin: 0
+      x: pillarX + 1.4, y: py + 0.42, w: pillarW - 1.5, h: 0.32,
+      fontSize: 10.5, fontFace: FONT_BODY, color: C.textMutedOnDark, italic: true, margin: 0
+    });
+    s.addText(p.stat, {
+      x: pillarX + 1.4, y: py + 0.78, w: pillarW - 1.5, h: 0.32,
+      fontSize: 9.5, fontFace: FONT_BODY, color: p.col, bold: true, margin: 0
     });
   });
 
-  s.addText("Source: EBRI Retirement Confidence Survey; Age Wave / Edward Jones “Four Pillars of the New Retirement.”", {
+  s.addText("Sources: Edward Jones / Age Wave, “Four Pillars of the New Retirement”; Fidelity Retiree Health Care Cost Estimate (2024); Hill & Turiano, Psychological Science (2014); Caring.com Wills & Estate Planning Study (2024).", {
     x: 0.7, y: 6.65, w: 12, h: 0.3,
     fontSize: 9, fontFace: FONT_BODY, color: C.textMutedOnDark, italic: true, margin: 0
   });
@@ -349,66 +372,77 @@ function slide4_Introducing() {
     sizing: { type: "contain", w: 5.0, h: 1.0 }
   });
 
-  s.addText("The engagement layer for fiduciary advisors.", {
-    x: 0.6, y: 2.15, w: 12, h: 0.55,
-    fontSize: 22, fontFace: FONT_HEAD, color: C.navyHeading, italic: true, margin: 0
+  // Headline
+  s.addText("An always-on engagement layer for fiduciary advisors.", {
+    x: 0.6, y: 2.1, w: 12.13, h: 0.95,
+    fontSize: 30, fontFace: FONT_HEAD, color: C.navyHeading, bold: true, margin: 0
   });
 
-  // Three-column "what RetireMore is"
-  const cols = [
-    {
-      eyebrow: "WHAT IT'S NOT",
-      title: "A planning software replacement.",
-      body: "Keep eMoney, RightCapital, MoneyGuidePro. RetireMore complements the planning you already do — it doesn't compete with it.",
-      color: C.textWarm,
-      accent: C.textWarm,
-    },
-    {
-      eyebrow: "WHAT IT IS",
-      title: "An always-on engagement layer.",
-      body: "12 retirement tools — financial, lifestyle, legacy — that your clients use between meetings to build a complete retirement plan, not just a financial one.",
-      color: C.blue,
-      accent: C.blue,
-    },
-    {
-      eyebrow: "WHY IT MATTERS",
-      title: "The questions you can't bill for.",
-      body: "Your clients want answers about identity, purpose, location, legacy, and digital life. RetireMore lets you answer them — and get credit for it.",
-      color: C.gold,
-      accent: C.gold,
-    },
-  ];
+  // Body paragraph (left column) — prose, not bullets
+  s.addText([
+    { text: "RetireMore sits ", options: { color: C.textWarm } },
+    { text: "alongside", options: { color: C.navyHeading, bold: true } },
+    { text: " the planning software you already use — eMoney, RightCapital, MoneyGuidePro — not in place of it. Your stack is built for the financial half of retirement. ", options: { color: C.textWarm } },
+    { text: "We're built for the rest:", options: { color: C.navyHeading, bold: true } },
+    { text: " where your clients will live, who they'll be when they stop working, what they'll leave behind, and what happens to their digital life.", options: { color: C.textWarm } },
+  ], {
+    x: 0.6, y: 3.25, w: 6.6, h: 2.1,
+    fontSize: 15, fontFace: FONT_BODY, margin: 0, paraSpaceAfter: 6
+  });
 
-  const colW = 4.05;
-  const colH = 4.0;
-  const colStartX = 0.6;
-  const colY = 2.85;
-  const colGap = 0.15;
+  s.addText([
+    { text: "It's the part of retirement your clients keep asking about — and the part nobody else has built for advisors yet.", options: { color: C.navyHeading, italic: true } },
+  ], {
+    x: 0.6, y: 5.45, w: 6.6, h: 1.0,
+    fontSize: 14, fontFace: FONT_BODY, margin: 0
+  });
 
-  cols.forEach((c, i) => {
-    const x = colStartX + i * (colW + colGap);
-    s.addShape(pres.shapes.RECTANGLE, {
-      x, y: colY, w: colW, h: colH,
-      fill: { color: C.white }, line: { color: C.borderLight, width: 0.75 },
-      shadow: { type: "outer", color: "000000", blur: 8, offset: 2, angle: 90, opacity: 0.06 }
-    });
-    s.addShape(pres.shapes.RECTANGLE, {
-      x, y: colY, w: colW, h: 0.12,
-      fill: { color: c.accent }, line: { type: "none" }
-    });
+  // Right column — pull quote card (Harvard Study of Adult Development)
+  const qx = 7.5;
+  const qy = 3.05;
+  const qw = 5.23;
+  const qh = 3.65;
 
-    s.addText(c.eyebrow, {
-      x: x + 0.35, y: colY + 0.4, w: colW - 0.7, h: 0.3,
-      fontSize: 11, fontFace: FONT_BODY, color: c.color, bold: true, charSpacing: 6, margin: 0
-    });
-    s.addText(c.title, {
-      x: x + 0.35, y: colY + 0.85, w: colW - 0.7, h: 1.2,
-      fontSize: 22, fontFace: FONT_HEAD, color: C.navyHeading, bold: true, margin: 0
-    });
-    s.addText(c.body, {
-      x: x + 0.35, y: colY + 2.2, w: colW - 0.7, h: 1.6,
-      fontSize: 13, fontFace: FONT_BODY, color: C.textWarm, margin: 0
-    });
+  s.addShape(pres.shapes.RECTANGLE, {
+    x: qx, y: qy, w: qw, h: qh,
+    fill: { color: C.navyDeep }, line: { type: "none" },
+    shadow: { type: "outer", color: "000000", blur: 10, offset: 3, angle: 90, opacity: 0.18 }
+  });
+  s.addShape(pres.shapes.RECTANGLE, {
+    x: qx, y: qy, w: 0.1, h: qh,
+    fill: { color: C.gold }, line: { type: "none" }
+  });
+
+  s.addText("“", {
+    x: qx + 0.3, y: qy + 0.05, w: 0.7, h: 0.9,
+    fontSize: 80, fontFace: FONT_HEAD, color: C.gold, bold: true, margin: 0
+  });
+
+  s.addText("The strongest predictors of health and happiness in later life are the quality of your relationships and your sense of meaning. Not your net worth. Not your asset allocation.", {
+    x: qx + 0.45, y: qy + 0.85, w: qw - 0.7, h: 1.85,
+    fontSize: 16, fontFace: FONT_HEAD, color: C.white, italic: true, margin: 0
+  });
+
+  s.addShape(pres.shapes.LINE, {
+    x: qx + 0.45, y: qy + 2.78, w: 0.6, h: 0,
+    line: { color: C.gold, width: 2 }
+  });
+  s.addText("Robert Waldinger, MD", {
+    x: qx + 0.45, y: qy + 2.85, w: qw - 0.7, h: 0.28,
+    fontSize: 12, fontFace: FONT_BODY, color: C.gold, bold: true, margin: 0
+  });
+  s.addText("Director, Harvard Study of Adult Development — the longest-running study of adult life, since 1938.", {
+    x: qx + 0.45, y: qy + 3.13, w: qw - 0.7, h: 0.45,
+    fontSize: 10, fontFace: FONT_BODY, color: C.textMutedOnDark, italic: true, margin: 0
+  });
+
+  // Bottom strap
+  s.addText([
+    { text: "RetireMore answers the questions your software ", options: { color: C.textWarm } },
+    { text: "was never built to ask.", options: { color: C.blue, bold: true } },
+  ], {
+    x: 0.6, y: 6.55, w: 12, h: 0.4,
+    fontSize: 14, fontFace: FONT_BODY, italic: true, margin: 0
   });
 
   addFooterLight(s, 4);
@@ -1197,29 +1231,23 @@ function slide11_Practice() {
     },
     {
       n: "02",
-      t: "Retain",
-      desc: "Clients engage with your brand between meetings. Higher retention. Lower churn. Stickier referrals.",
-      color: C.gold,
-    },
-    {
-      n: "03",
       t: "Discover",
       desc: "The Find a Planner directory drives qualified prospects to you — fiduciary-aligned, fee-free, full-picture.",
       color: C.lifeAccent,
     },
     {
-      n: "04",
-      t: "Charge More",
-      desc: "A complete retirement experience supports premium advisory fees. You're delivering more — charge for it.",
-      color: C.legacyAccent,
+      n: "03",
+      t: "Retain",
+      desc: "Clients engage with your brand between meetings. Higher retention. Lower churn. Stickier referrals.",
+      color: C.gold,
     },
   ];
 
-  const cw = 2.95;
+  const cw = 3.93;
   const ch = 4.1;
   const startX = 0.6;
   const cy = 2.3;
-  const cgap = 0.13;
+  const cgap = 0.16;
 
   reasons.forEach((r, i) => {
     const x = startX + i * (cw + cgap);
@@ -1296,6 +1324,7 @@ function slide12_Pricing() {
       name: "SOLO",
       mo: "$99", yr: "$79", yrTotal: "$948/yr",
       clients: "Up to 20 clients",
+      perClient: "≈ $3.95 per client / mo",
       featured: false,
       features: [
         "White-label branding",
@@ -1312,6 +1341,7 @@ function slide12_Pricing() {
       name: "PROFESSIONAL",
       mo: "$199", yr: "$159", yrTotal: "$1,908/yr",
       clients: "Up to 45 clients",
+      perClient: "≈ $3.53 per client / mo",
       featured: true,
       features: [
         "Everything in Solo, plus:",
@@ -1328,6 +1358,7 @@ function slide12_Pricing() {
       name: "ENTERPRISE",
       mo: "$499", yr: "$399", yrTotal: "$4,788/yr",
       clients: "Unlimited clients",
+      perClient: "≈ $3.99 / client at 100 — and falling",
       featured: false,
       features: [
         "Everything in Professional, plus:",
@@ -1402,13 +1433,17 @@ function slide12_Pricing() {
       line: { color: C.borderDark, width: 0.75 }
     });
     s.addText(t.clients, {
-      x: x + 0.4, y: ty + 2.5, w: tw - 0.8, h: 0.32,
+      x: x + 0.4, y: ty + 2.48, w: tw - 0.8, h: 0.28,
       fontSize: 12, fontFace: FONT_BODY, color: C.gold, bold: true, margin: 0
+    });
+    s.addText(t.perClient, {
+      x: x + 0.4, y: ty + 2.74, w: tw - 0.8, h: 0.24,
+      fontSize: 10, fontFace: FONT_BODY, color: C.textMutedOnDark, italic: true, margin: 0
     });
 
     // Features
     t.features.forEach((f, j) => {
-      const fY = ty + 2.95 + j * 0.25;
+      const fY = ty + 3.02 + j * 0.25;
       const isHeader = f.startsWith("Everything");
       s.addText("✓", {
         x: x + 0.4, y: fY, w: 0.2, h: 0.25,
