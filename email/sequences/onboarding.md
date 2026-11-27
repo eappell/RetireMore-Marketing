@@ -137,19 +137,16 @@ Pick the one that's been on your mind and try it.
 
 I want to be honest about pricing.
 
-The free tier of RetireMore is genuinely useful. You get all 12 tools, 3 saved scenarios per tool, and 5 AI Coach questions per day. Most people get value without ever paying us a dollar. We're fine with that.
+The free tier of RetireMore is genuinely useful. You get all 12 tools, your Retirement Readiness Score, and 5 AI Coach questions per day. Most people get value without ever paying us a dollar. We're fine with that.
 
-If you want more, here's what Premium ($19/mo, $149/yr) adds:
-- Unlimited saved scenarios in every tool
-- PDF reports you can print or share with an advisor
-- Retirement Readiness Score with a percentile vs. people in your cohort
+If you want more, Premium is $89 a year (about $7.42 a month) or $9.95 month to month. It adds:
 - Smart Action Plan — what to fix first
-
-And Planner ($29/mo, $229/yr) adds:
 - Unlimited AI Coach
-- Cross-tool insights (when one decision affects another)
-- Couples planning mode
-- Scenario simulator
+- Monte Carlo projections and the Roth conversion optimizer
+- Advanced gifting and estate analysis
+- PDF reports you can print or share with an advisor
+
+You can try it free for 7 days, and your price never goes up for as long as you stay subscribed.
 
 If the free tier is what you need, stay there. If you want the deeper plan, here's where to upgrade:
 

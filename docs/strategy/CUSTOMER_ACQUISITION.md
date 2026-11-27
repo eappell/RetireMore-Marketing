@@ -2,7 +2,7 @@
 
 **Goal:** 100 paying subscribers within 90 days
 **Audience:** Gen X pre-retirees (50-65)
-**Pricing:** Free / Premium ($19/mo or $149/yr) / Planner ($29/mo or $229/yr)
+**Pricing:** Free / Premium ($9.95/mo or $89/yr, 7-day free trial, price locked while subscribed). Priced below ReadyAimRetire ($12.95/mo, $115/yr). Planner tier not sold yet.
 
 ---
 
@@ -24,9 +24,9 @@ You're asking strangers on the internet to enter their income, Social Security n
 
 1 scenario per tool and 2 AI questions per day — a user can't even do meaningful "what-if" analysis on the free tier. If they can't feel the power of the platform before paying, they won't pay. You need them addicted before you ask for the credit card.
 
-### 5. $19-29/month is real money for a tool people use occasionally
+### 5. A monthly subscription is real money for a tool people use occasionally
 
-Netflix is $15. Spotify is $11. Those get used daily. You need to justify a higher price for something that might get used intensively for 2-3 weeks, then monthly at best.
+Netflix is $15. Spotify is $11. Those get used daily. Premium is now $9.95/mo or $89/yr (about $7.42/mo), below both and below ReadyAimRetire, but it still has to be justified for something that might get used intensively for 2-3 weeks, then monthly at best. Lead with the annual price.
 
 ---
 
@@ -171,9 +171,9 @@ You have zero reviews, zero testimonials, zero trust signals. Before spending a 
 - Add security badges, SOC2 mention (if applicable), "Your data is encrypted" messaging
 - Add "We're Eddie & Lara" — put your faces on the landing page. Gen X trusts people, not brands
 
-### 5. Offer annual pricing at launch with a founding member discount
+### 5. Lead with annual pricing and a price lock
 
-"First 100 members: $99/year for Premium (normally $149)." Creates urgency, locks in revenue, and the word "founding" makes early adopters feel special.
+Decided Nov 2026: Premium is $89/yr (about $7.42/mo) or $9.95/mo, with a 7-day free trial, and **every subscriber's price is locked for as long as they stay subscribed**. That gives early adopters the "founding member" benefit without scarcity or urgency copy, which the brand rules ban: "Your price never goes up while you stay subscribed."
 
 ---
 
@@ -195,9 +195,9 @@ You have zero reviews, zero testimonials, zero trust signals. Before spending a 
 
 | Scenario | Monthly Revenue | Annual Revenue |
 |----------|----------------|----------------|
-| 80 Premium ($19) + 20 Planner ($29) | $2,100 | $25,200 |
-| 60 Premium annual ($149) + 40 Planner annual ($229) | — | $18,100 |
-| Mix with founding discount | — | $12,000-15,000 |
+| 100 Premium monthly ($9.95) | $995 | $11,940 |
+| 100 Premium annual ($89) | — | $8,900 |
+| 60 annual + 40 monthly | — | $10,116 |
 
 This won't pay your bills yet. But 100 paying users proves the market exists, gives you real usage data, and gives you the story to raise money or double down.
 

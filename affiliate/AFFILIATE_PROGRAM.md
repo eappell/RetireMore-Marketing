@@ -33,10 +33,8 @@ Public rate card lives at retiremore.com/affiliates. Boldin and Empower both hid
 
 | Plan they buy | Year 1 to affiliate | Year 3 cumulative | Year 5 cumulative |
 |---|---|---|---|
-| Premium annual ($149) | $44.70 | $134.10 | $223.50 |
-| Premium monthly ($19) | $68.40 | $205.20 | $342.00 |
-| Planner annual ($229) | $68.70 | $206.10 | $343.50 |
-| Planner monthly ($29) | $104.40 | $313.20 | $522.00 |
+| Premium annual ($89) | $26.70 | $80.10 | $133.50 |
+| Premium monthly ($9.95) | $35.82 | $107.46 | $179.10 |
 
 Pro tier (35%) and Premier tier (40%) scale proportionally.
 
@@ -65,7 +63,7 @@ Cookie window: 90 days. Attribution: last-paid-touch.
 
 On top of the public self-serve tier:
 
-1. **Custom promo code** (e.g., `PETER20` for 20% off first year). Discount is split: customer saves $30 on Premium annual; RetireMore eats $15; affiliate's first-year commission drops from $44.70 to $29.70 on those sales.
+1. **Custom promo code** (e.g., `PETER20` for 20% off first year). Discount is split: customer saves $17.80 on Premium annual; RetireMore eats $8.90; affiliate's first-year commission drops from $26.70 to $17.80 on those sales.
 2. **Custom landing page** at `/r/{handle}` with the creator's name, photo, and pre-filled promo code. Industry data shows 30 to 50% conversion lift in personal-finance affiliate programs.
 3. **Co-marketing slot:** top 5 partners by quarter get an email mention to our list, plus up to $500 per quarter for a sponsored YouTube deep-dive.
 
@@ -91,7 +89,7 @@ Detailed comp data is in [competitive-analysis.md](competitive-analysis.md). Sum
 
 30% recurring lifetime materially beats every published rate while sitting inside the 25 to 35% range that's standard for SaaS subscription affiliates. The $20 first-conversion bonus solves the "first paycheck takes 3 months and is $4" problem that kills micro-influencer momentum.
 
-**Margin guardrail:** at 30% on Premium annual ($149), affiliate cost is $44.70 year 1, paid as the customer pays us (not up-front). Compared to paid-ads CAC in this vertical ($80 to $200 paid up-front for a $149 ARR customer), affiliate is cash-flow-friendlier. The risk is a power-affiliate driving 1,000 conversions and being owed ~$45k/yr in perpetuity. That's a problem we want.
+**Margin guardrail:** at 30% on Premium annual ($89), affiliate cost is $26.70 year 1, paid as the customer pays us (not up-front). Compared to paid-ads CAC in this vertical ($80 to $200 paid up-front for an $89 ARR customer), affiliate is far cash-flow-friendlier. The risk is a power-affiliate driving 1,000 conversions and being owed ~$27k/yr in perpetuity. That's a problem we want.
 
 ---
 

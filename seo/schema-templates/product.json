@@ -16,26 +16,26 @@
     },
     {
       "@type": "Offer",
-      "name": "Premium",
-      "price": "19",
+      "name": "Premium (monthly)",
+      "price": "9.95",
       "priceCurrency": "USD",
       "priceSpecification": {
         "@type": "UnitPriceSpecification",
-        "price": "19",
+        "price": "9.95",
         "priceCurrency": "USD",
         "billingIncrement": "P1M"
       }
     },
     {
       "@type": "Offer",
-      "name": "Planner",
-      "price": "29",
+      "name": "Premium (annual)",
+      "price": "89",
       "priceCurrency": "USD",
       "priceSpecification": {
         "@type": "UnitPriceSpecification",
-        "price": "29",
+        "price": "89",
         "priceCurrency": "USD",
-        "billingIncrement": "P1M"
+        "billingIncrement": "P1Y"
       }
     }
   ]
