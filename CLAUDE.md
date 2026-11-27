@@ -60,11 +60,12 @@ Source of truth: [`../Retire-Portal/apps/portal/lib/appRegistry.ts`](../Retire-P
 
 | Tier | Monthly | Annual | Effective | Headline benefit |
 |------|---------|--------|-----------|------------------|
-| **Free** | $0 | $0 | Always free | All 12 tools, 3 scenarios/tool, AI Coach 5 questions/day |
-| **Premium** | $19 | $149/yr | $12/mo (save 35%) | Unlimited scenarios, PDF reports, AI Coach 10 queries/mo, Readiness Score, Smart Action Plan |
-| **Planner** | $29 | $229/yr | $19/mo (save 34%) | Everything in Premium + unlimited AI Coach, cross-tool insights, scenario simulator, risk detector, couples planning, "Future You" simulation |
+| **Free** | $0 | $0 | Always free | All 12 tools, Readiness Score, AI Coach 5 questions/day |
+| **Premium** | $9.95 | $89/yr | $7.42/mo (save 25%) | Unlimited AI Coach, Smart Action Plan, Monte Carlo, Roth optimizer, advanced gifting/estate analysis, AI insights, PDF reports |
 
-Valid tier strings in code: `'admin' | 'paid' | 'planner' | 'free' | null`. **Never use `'pro'`** — it is not a valid tier. Premium = `paid`. Planner is the upper tier (formerly called "Pro" in old copy).
+Premium has a **7-day free trial** and a **price lock** (your price never goes up while you stay subscribed). Priced below ReadyAimRetire ($12.95/mo, $115/yr). **The Planner tier is not sold** until its features exist: don't mention it in copy.
+
+Valid tier strings in code: `'admin' | 'paid' | 'planner' | 'free' | null`. **Never use `'pro'`** — it is not a valid tier. Premium = `paid`. `planner` stays valid in code but isn't offered.
 
 Full detail: [brand/pricing-tiers.md](brand/pricing-tiers.md)
 

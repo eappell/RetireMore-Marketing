@@ -41,7 +41,7 @@ The product is fully built and in beta, with 12 functional tools, an AI Orchestr
 - 12 integrated planning tools, fully functional
 - AI Orchestrator generating cross-tool retirement readiness scores (0–100)
 - 15+ automated cross-tool insight patterns detecting optimization opportunities
-- 3-tier consumer pricing ($0 / $19/mo / $29/mo) plus advisor professional plans
+- Consumer pricing: Free + Premium ($9.95/mo or $89/yr), priced below ReadyAimRetire, plus advisor professional plans
 - 8 identified revenue streams across consumer, professional, and marketplace segments
 - Total addressable market: 65 million Gen X Americans
 
@@ -177,11 +177,14 @@ RetireMore is a suite of twelve specialized retirement planning tools unified wi
 
 ### 6.1 Consumer Subscriptions (Primary — Year 1)
 
+> **Pricing update (Nov 2026):** consumer pricing is now **Free + Premium at $9.95/mo or $89/yr** (7-day free trial, price locked while subscribed). The Planner tier is not sold until its features exist. Source of truth: `Retire-Portal/apps/portal/lib/pricing.ts` and `RetireMore-Marketing/brand/pricing-tiers.md`.
+
 | Tier | Monthly | Annual | Included |
 |------|---------|--------|----------|
-| Free | $0 | $0 | Income Planner basic (1 scenario), Healthcare Calculator; AI Coach and reports locked |
-| Standard | $19/mo | $149/yr | All 12 tools, unlimited scenarios, AI Coach (10 queries/mo), saved data, PDF reports |
-| Premium | $29/mo | $229/yr | Everything above + unlimited AI Coach, cross-tool AI insights, scenario simulator, risk alerts, couples planning mode |
+| Free | $0 | $0 | All 12 tools, Retirement Readiness Score, AI Coach 5 questions/day |
+| Premium | $9.95/mo | $89/yr | Everything in Free + unlimited AI Coach, Smart Action Plan, Monte Carlo, Roth optimizer, advanced gifting/estate analysis, AI insights, PDF reports. 7-day free trial; price locked while subscribed |
+
+> **Projections below not yet re-run:** the subscriber revenue, ARPU, CAC-payback and P&L figures in this plan were built on the earlier ~$180/yr blended ARPU. At current pricing, blended consumer ARPU is roughly $90–$100/yr (mostly annual at $89). Re-run them before sharing this plan externally.
 
 **Year 1 target:** 1,000 subscribers at ~$180/yr blended average = **$180,000 ARR**
 
@@ -202,9 +205,9 @@ RetireMore is a suite of twelve specialized retirement planning tools unified wi
 | Financial Bundle | Income, Tax, SS, Healthcare, Longevity | $99/yr |
 | Purpose Bundle | Identity, Volunteer, AI Orchestrator | $75/yr |
 | Legacy Bundle | Digital Estate, Gifting, Legacy Flow | $75/yr |
-| Full Suite | All 12 tools | $149/yr |
+| Full Suite | All 12 tools | $89/yr (this is Premium) |
 
-Designed as entry points that convert to full-suite subscriptions.
+Designed as entry points that convert to full-suite subscriptions. **Not offered today.** Since Premium is now $89/yr, any bundle would have to be priced well below that (roughly $39–$59/yr) to make sense, or be dropped.
 
 ### 6.4 Retire Abroad Marketplace (Year 1, Phase 3)
 
@@ -387,7 +390,7 @@ Retirement planning *feels* like a one-time activity. The critical business chal
 
 ### 9.4 Pricing Psychology
 
-At $12–$19/month, position against the cost of bad decisions:
+At $89/yr (about $7.42/month), position against the cost of bad decisions:
 
 | Comparison | Cost |
 |---|---|

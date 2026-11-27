@@ -46,8 +46,8 @@
 
 | Plan they buy | What you earn (annual) | Year 1 | Year 3 | Year 5 |
 |---|---|---|---|---|
-| Premium ($149/yr) | 30% × $149 = **$44.70/yr** | $44.70 | $134.10 | $223.50 |
-| Planner ($229/yr) | 30% × $229 = **$68.70/yr** | $68.70 | $206.10 | $343.50 |
+| Premium annual ($89/yr) | 30% × $89 = **$26.70/yr** | $26.70 | $80.10 | $133.50 |
+| Premium monthly ($9.95/mo) | 30% × $9.95 = **$2.99/mo** | $35.82 | $107.46 | $179.10 |
 
 (Plus the $20 first-conversion bonus the first time anyone you refer subscribes.)
 
@@ -55,7 +55,7 @@
 
 Three reasons we hear back:
 
-1. **It actually helps your audience.** RetireMore is 12 retirement planning tools (income, taxes, healthcare, Social Security, location, purpose, legacy) for $19/mo. Most of your audience is asking exactly these questions. Recommending a tool that solves them makes you look smart.
+1. **It actually helps your audience.** RetireMore is 12 retirement planning tools (income, taxes, healthcare, Social Security, location, purpose, legacy) for $89/yr or $9.95/mo. Most of your audience is asking exactly these questions. Recommending a tool that solves them makes you look smart.
 
 2. **No financial product sale at the end.** We don't sell insurance, AUM, or annuities. We never refer your audience to advisors who pay us per lead. You can recommend RetireMore without worrying about what we do to your audience after they sign up.
 

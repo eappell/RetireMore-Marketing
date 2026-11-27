@@ -24,34 +24,28 @@
 
 ### Free
 - All 12 tools
-- 3 saved scenarios per tool
+- Retirement Readiness Score
 - AI Coach: 5 questions/day
 - *Headline:* "The most useful free retirement planning tool on the internet."
 
-### Premium ($19/mo or $149/yr — $12/mo equivalent, save 35%)
-- Unlimited scenarios
-- PDF reports for every tool
-- AI Coach: 10 queries/month
-- Retirement Readiness Score
-- Smart Action Plan
-- *Headline:* "Everything in Free, plus the readiness score and the action plan that tells you what to fix first."
-
-### Planner ($29/mo or $229/yr — $19/mo equivalent, save 34%)
-- Everything in Premium
+### Premium ($89/yr — about $7.42/mo, save 25% — or $9.95/mo)
 - Unlimited AI Coach
-- Cross-tool insights (e.g., "Your Roth conversion plan affects your IRMAA — here's how")
-- Scenario simulator (test what-ifs across the whole platform)
-- Risk detector
-- Couples planning mode
-- "Future You" simulation
-- *Headline:* "Plan as a household, simulate every what-if, and get the AI coaching to think through trade-offs."
+- Smart Action Plan
+- Monte Carlo projections
+- Roth conversion optimizer and tax flow chart
+- Advanced gifting and estate analysis
+- AI insights and PDF reports
+- 7-day free trial; your price never goes up while you stay subscribed
+- *Headline:* "Everything in Free, plus the action plan that tells you what to fix first, for less than ReadyAimRetire."
+
+(The Planner tier is not sold until its features exist. See [pricing-tiers.md](pricing-tiers.md).)
 
 ## Value props by tool category
 
 ### Financial Security
 - *Hook:* "Run the math on your real situation — before you make a decision you can't undo."
 - *Proof:* Monte Carlo, SSA-grade benefit calc, IRMAA-aware tax modeling, sequence-of-returns testing.
-- *Differentiator:* These tools talk to each other. A Roth conversion in the Tax Analyzer flows to your Healthcare and Income projections automatically (Planner tier).
+- *Differentiator:* These tools talk to each other. A Roth conversion in the Tax Analyzer flows to your Healthcare and Income projections automatically.
 
 ### Lifestyle & Purpose
 - *Hook:* "Retirement is more than a withdrawal rate. Where will you live? Who will you be? What will fill your days?"
